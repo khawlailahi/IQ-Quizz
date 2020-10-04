@@ -1,3 +1,4 @@
+
 #questiondiv {
 	display: none;
 
@@ -7,3 +8,13 @@
 	display: none;
 
 }
+
+body {
+	max-width: 1000px;
+	margin: auto;
+}
+
+a{
+	display: none;
+}
+

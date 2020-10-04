@@ -12,6 +12,7 @@ var questions = [{question:"Which number should come next in the pattern:"+"\n"+
                   choices : ["a.Yen","b.Pound","c.Mark","d.Franc"]} ];
 
 
+
 //filing questions
 
 $("#q1").text(questions[0].question);
@@ -40,14 +41,57 @@ $("#l14").text((questions[3].choices)[1]);
 $("#l15").text((questions[3].choices)[2]);
 $("#l16").text((questions[3].choices)[3]);
 
-
+//hide the question until the user clicks on start
 $("#start").click(function(){
       $("#questiondiv").css("display", "block");
        $("#finishdiv").css("display", "block");
  })
 
-$("body").css("display", "none");
+
+// counting the result 
+
+$("#finish").click(function count(){
+      var count=0;
+      if ($("#form1 :checked").val() === questions[0].answer)
+            count++;
+      if ($("#form2 :checked").val() === questions[1].answer)
+            count++;
+      if($("#form3 :checked").val() === questions[2].answer)
+            count++;
+      if($("#form4 :checked").val() === questions[3].answer)
+            count++;
+
+       $("#questiondiv").css("display", "none");
+       $("#startdiv").css("display", "none");
+       $("#finishdiv").css("display", "none");
        $("#result").css("display", "block");
 
+      var average= (count/4)*100 ;
+
+      if(average===100 || average>=90)
+      {
+            console.log(average);
+            $('#result').text("congratulation!!! You are very smart");
+      }
+
+      else if(average>=70 && average<90)
+      {
+            console.log(average);
+            $('#result').text("congratulation!!! You are smart");
+      }
+
+       else if(average>=40 &&average<70){
+            console.log(average);
+            $('#result').text("congratulation!!! You have an average IQ");
+       }
+
+       else{
+            console.log(average);
+            $('#result').text("I am sorry ,Your Iq is below average "+"\n"+
+               "click in the this link if you need more practice");
+            $('a').css("display", "block");
 
 
+       } 
+ });
+            
