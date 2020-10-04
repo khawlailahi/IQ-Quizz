@@ -12,6 +12,17 @@ var questions = [{question:"Which number should come next in the pattern:"+"\n"+
                   choices : ["a.Yen","b.Pound","c.Mark","d.Franc"]} ];
 
 
+
+// function fillQuestion(){
+
+// 	$("form1").text(questions[0].question);
+//       for (var i = 0; i < questions.length;i++){
+// 	$("questiondiv").text(questions[i].question);
+// }
+
+	
+// }
+
 //filing questions
 
 $("#q1").text(questions[0].question);
@@ -21,6 +32,17 @@ $("#q4").text(questions[3].question);
  
 
 // filling the answers 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -38,7 +60,40 @@ $("#finish").click(function count(){
             count++;
       if($("#form4 :checked").val() === questions[3].answer)
             count++;
+
+       $("#questiondiv").css("display", "none");
+       $("#startdiv").css("display", "none");
+       $("#finishdiv").css("display", "none");
+       $("#result").css("display", "block");
+
       var average= (count/4)*100 ;
-})
+
+      if(average===100 || average>=90)
+      {
+            console.log(average);
+            $('#result').text("congratulation!!! You are very smart");
+      }
+
+      else if(average>=70 && average<90)
+      {
+            console.log(average);
+            $('#result').text("congratulation!!! You are smart");
+      }
+
+       else if(average>=40 &&average<70){
+            console.log(average);
+            $('#result').text("congratulation!!! You have an average IQ");
+       }
+
+       else{
+            console.log(average);
+            $('#result').text("I am sorry ,Your Iq is below average "+"\n"+
+               "click in the this link if you need more practice");
+            $('a').css("display", "block");
+
+
+       } 
+ });
+            
 
 //  
