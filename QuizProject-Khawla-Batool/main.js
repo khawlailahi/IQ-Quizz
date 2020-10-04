@@ -1,13 +1,13 @@
-var questions = [{question:"Which number should come next in the pattern:"+"\n"+"37, 34, 31, 28...",
+var questions = [{question:"1.Which number should come next in the pattern:"+"\n"+"37, 34, 31, 28...",
                   answer:"choice3",
                   choices : ["a.18","b.26","c.25","d.48"]},
-                  {question:"Find the answer that best completes the analogy: "+"\n"+  "Book is to Reading as Fork is to:",
+                  {question:"2.Find the answer that best completes the analogy: "+"\n"+  "Book is to Reading as Fork is to:",
                   answer:"choice1",
                   choices : [ "a.Eating", "b.Drawing","c.Writing","d.Stirring"]},
-                  {question:"Which number should replace the ?  in the pattern?"+"\n"+"2,7,12,17,?,27,32",
+                  {question:"3.Which number should replace the ?  in the pattern?"+"\n"+"2,7,12,17,?,27,32",
                   answer:"choice4",
                   choices : ["a.17","b.29","c.31","d.22"]},
-                  {question:"One word in this list doesn't belong to the same group:"+"\n"+"Yen, Pound, Franc, Penny, Mark.",
+                  {question:"4.One word in this list doesn't belong to the same group:"+"\n"+"Yen, Pound, Franc, Penny, Mark.",
                   answer:"choice3",
                   choices : ["a.Yen","b.Pound","c.Mark","d.Franc"]} ];
 
@@ -45,6 +45,7 @@ $("#l16").text((questions[3].choices)[3]);
 $("#start").click(function(){
       $("#questiondiv").css("display", "block");
        $("#finishdiv").css("display", "block");
+       $("#startdiv").css("display", "none");
  })
 
 
