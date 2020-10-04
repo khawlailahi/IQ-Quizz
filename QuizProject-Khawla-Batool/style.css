@@ -1,4 +1,9 @@
-body {
-	max-width: 1000px;
-	margin: auto;
+#questiondiv {
+	display: none;
+
+}
+
+ #finishdiv{
+	display: none;
+
 }
