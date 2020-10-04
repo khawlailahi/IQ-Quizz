@@ -12,7 +12,7 @@ var questions = [{question:"Which number should come next in the pattern:"+"\n"+
                   choices : ["a.Yen","b.Pound","c.Mark","d.Franc"]} ];
 
 
-
+//filing questions
 
 $("#q1").text(questions[0].question);
 $("#q2").text(questions[1].question);
