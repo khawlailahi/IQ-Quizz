@@ -1,3 +1,15 @@
+
+.correct{
+  display: none;
+  background: rgb(192,192,192,0.2);
+}
+.chosen{
+  display: none;
+  background: rgb(192,192,192,0.2);
+}
+#q, #review{
+  display: none;
+}
 h1{
 	color:pink;
 	text-align: center;
@@ -10,8 +22,8 @@ h2{
 #result{
 	text-align: center;
  	font-size: 35px;
- 	background: rgb(192,192,192,0.2);
- 	
+  font-weight: bold;
+  
 }
  #good-luck1{
  	text-align: center;
@@ -64,6 +76,18 @@ padding: 5px 12px;
   border-color: gray;
   
 }
+#review{
+  color:white;
+  padding: 5px 12px;
+  text-align: center;
+  background: lightgreen;
+  size:100px;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  border-color: gray;
+}
 
 #questiondiv {
 	display: none;
@@ -74,7 +98,7 @@ padding: 5px 12px;
  #finishdiv{
 	display: none;
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 	color: black;
 	text-decoration: underline;
 	background: rgb(192,192,192,0.4);
@@ -95,6 +119,11 @@ a{
 	display: none;
 }
 
-#cong{
+#cong, #average, #dog{
 	display: none;
+  max-width: 700px;
+  margin: auto;
+}
+
+
 }
