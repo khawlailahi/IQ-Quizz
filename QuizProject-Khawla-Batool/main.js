@@ -92,7 +92,7 @@ $("#finish").click(function count(){
             
             $('#result').text("congratulation!!! You have an average IQ: "+average);
             $('#cong').css("display", "block");
-            audio.play();
+            //audio.play();
        }
 
        else{
