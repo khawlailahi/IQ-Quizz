@@ -12,12 +12,12 @@ var questions = [{question:"Which number should come next in the pattern?"+"/n"+
                   choices : ["a.Yen","b.Pound","c.Mark","d.Franc"]} ];
 
 
-function fillQuestion(){
+// function fillQuestion(){
 
-	$("form1").text(questions[0].question);
-for (var i = 0; i < questions.length;i++){
-	$("form1").text(questions[i].question);
-}
+// 	$("form1").text(questions[0].question);
+//       for (var i = 0; i < questions.length;i++){
+// 	$("questiondiv").text(questions[i].question);
+// }
 
 	
-}
+// }
