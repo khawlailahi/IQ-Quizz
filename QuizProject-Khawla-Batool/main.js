@@ -68,28 +68,35 @@ $("#finish").click(function count(){
        $("#result").css("display", "block");
 
       var average= (count/4)*100 ;
+      var audio = document.getElementById("sound1");
+      function playAudio() { 
+          audio.play(); 
+      } 
+
 
       if(average===100 || average>=90)
       {
-            console.log(average);
-            $('#result').text("congratulation!!! You are very smart");
+            $('#result').text("congratulation!!! You are very smart: "+average);
+            $('#cong').css("display", "block");
+            playAudio();
       }
 
       else if(average>=70 && average<90)
       {
-            console.log(average);
-            $('#result').text("congratulation!!! You are smart");
+            $('#result').text("congratulation!!! You are smart: "+average);
+            $('#cong').css("display", "block");
+             playAudio();
       }
 
        else if(average>=40 &&average<70){
-            console.log(average);
-            $('#result').text("congratulation!!! You have an average IQ");
+            
+            $('#result').text("congratulation!!! You have an average IQ: "+average);
+            $('#cong').css("display", "block");
+            audio.play();
        }
 
        else{
-            console.log(average);
-            $('#result').text("I am sorry ,Your Iq is below average "+"\n"+
-               "click in the this link if you need more practice");
+            $('#result').text("I am sorry ,Your IQ is below average click in the this link if you need more practice: "+average);
             $('a').css("display", "block");
 
 
