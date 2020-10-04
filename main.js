@@ -1,5 +1,5 @@
 //----> i'am working in a group study 
-// we are redoing the exercices , i already did 
+
 $(document).ready(function(){
 	$("#main-header").text("TodoApp")
 
