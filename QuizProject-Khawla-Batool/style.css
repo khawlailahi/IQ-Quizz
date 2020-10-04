@@ -1,3 +1,14 @@
+
+#questiondiv {
+	display: none;
+
+}
+
+ #finishdiv{
+	display: none;
+
+}
+
 body {
 	max-width: 1000px;
 	margin: auto;
@@ -6,3 +17,4 @@ body {
 a{
 	display: none;
 }
+
