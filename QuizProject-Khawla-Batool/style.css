@@ -1,9 +1,11 @@
 
 body {
-	background: url(bg.gif);
-	background-size: 1500px 550px;
+	background: url(bg1.gif);
+	/*background-size: 1000px 1000px;*/
     margin: auto;
 	color: white;
+	max-width: 700px;
+	margin: auto;
 
 }
 
