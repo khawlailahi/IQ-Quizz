@@ -1,3 +1,4 @@
+
 var questions = [{question:"1.Which number should come next in the pattern:"+"\n"+"37, 34, 31, 28...",
                   answer:"choice3",
                   choices : ["a.18","b.26","c.25","d.48"]},
@@ -71,6 +72,56 @@ $("#start").click(function(){
 
 $("#finish").click(function count(){
       var count=0;
+
+
+      if ($("#form1 :checked").val() === questions[0].answer)
+            count++;
+      if ($("#form2 :checked").val() === questions[1].answer)
+            count++;
+      if($("#form3 :checked").val() === questions[2].answer)
+            count++;
+      if($("#form4 :checked").val() === questions[3].answer)
+            count++;
+
+       $("#questiondiv").css("display", "none");
+       $("#startdiv").css("display", "none");
+       $("#finishdiv").css("display", "none");
+       $("#result").css("display", "block");
+
+      var average= (count/4)*100 ;
+     
+
+      if(average===100 || average>=90)
+      {
+            $('#result').text("Congratulation!!! You are very smart: "+"\n"+"Your score is: "+average);
+            $('#cong').css("display", "block");
+           
+            
+      }
+
+      else if(average>=70 && average<90)
+      {
+            $('#result').text("Congratulation!!! You are smart: "+"\n"+"Your score is: "+average);
+            $('#cong').css("display", "block");
+      
+            
+             
+      }
+
+       else if(average>=40 &&average<70){
+            
+            $('#result').text("Congratulation!!! You have an average IQ: "+"\n"+"Your score is: "+average);
+            $('#cong').css("display", "block");
+            
+       }
+
+       else{
+            $('#result').text("I am sorry, Your IQ is below average"+"\n"+"Your score is: "+average+"\n"+"Click in the this image if you need more practice: ");
+            $('a').css("display", "block");
+
+
+       } 
+
 
       //storing the choices of the user
       var choice1 =$("#form1 :checked").val();
