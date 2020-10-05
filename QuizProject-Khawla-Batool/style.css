@@ -2,10 +2,14 @@
 .correct{
   display: none;
   background: rgb(192,192,192,0.2);
+  color: lightgreen;
+  font-weight: bold;
 }
 .chosen{
   display: none;
   background: rgb(192,192,192,0.2);
+  color:red;
+  font-weight: bold;
 }
 #q, #review{
   display: none;

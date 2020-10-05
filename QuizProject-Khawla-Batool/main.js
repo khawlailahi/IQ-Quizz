@@ -81,22 +81,31 @@ $("#finish").click(function count(){
 
       //if one of the question is not answered send alert
       if(!choice1 || !choice2|| !choice3|| !choice4|| !choice5)
-            alert('You must fill answer all the questions first');
+            alert('You must answer all the questions !');
 
-      else { if (choice1 === questions[0].answer)
+      else { if (choice1 === questions[0].answer){
                   count++;
+                   $("#form1 .chosen").css("color", "lightgreen");
+              }
+            if (choice2 === questions[1].answer){
+                  count++;
+            $("#form2 .chosen").css("color", "lightgreen");
+              }
 
-            if (choice2 === questions[1].answer)
+            if(choice3 === questions[2].answer){
                   count++;
+            $("#form3 .chosen").css("color", "lightgreen");
+              }
 
-            if(choice3 === questions[2].answer)
+            if(choice4 === questions[3].answer){
                   count++;
+            $("#form4 .chosen").css("color", "lightgreen");
+              }
 
-            if(choice4 === questions[3].answer)
+            if(choice5 === questions[4].answer){
                   count++;
-
-            if(choice5 === questions[4].answer)
-                  count++;
+                  $("#form5 .chosen").css("color", "lightgreen");
+            }
             //hide th Qs div and display the next elements
              $("#questiondiv").css("display", "none");
              $("#startdiv").css("display", "none");
@@ -143,10 +152,10 @@ $("#finish").click(function count(){
 
              //saving the choices in the chosen <p> to display in the review
              $("#form1 .chosen").text("Your answer : "+($("#form1 label[for="+choice1+"]").text()));
-             $("#form2 .chosen").text("Your answer : "+($("#form1 label[for="+choice2+"]").text()));
-             $("#form3 .chosen").text("Your answer : "+($("#form1 label[for="+choice3+"]").text()));
-             $("#form4 .chosen").text("Your answer : "+($("#form1 label[for="+choice4+"]").text()));
-             $("#form5 .chosen").text("Your answer : "+($("#form1 label[for="+choice5+"]").text()));
+             $("#form2 .chosen").text("Your answer : "+($("#form2 label[for="+choice2+"]").text()));
+             $("#form3 .chosen").text("Your answer : "+($("#form3 label[for="+choice3+"]").text()));
+             $("#form4 .chosen").text("Your answer : "+($("#form4 label[for="+choice4+"]").text()));
+             $("#form5 .chosen").text("Your answer : "+($("#form5 label[for="+choice5+"]").text()));
       }
  });
  
