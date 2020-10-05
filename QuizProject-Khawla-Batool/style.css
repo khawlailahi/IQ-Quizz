@@ -114,6 +114,7 @@ padding: 5px 12px;
 }
 /*hyber link for practice*/
 a{
+  color: pink;
   display: none;
 }
 
