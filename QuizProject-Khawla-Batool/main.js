@@ -64,6 +64,7 @@ $("#start").click(function(){
        $("#finishdiv").css("display", "block");
        $("#startdiv").css("display", "none");
        $("#q").css("display","block")
+       $("body").css("background-image","url(bg1.png)")
  })
 
 
