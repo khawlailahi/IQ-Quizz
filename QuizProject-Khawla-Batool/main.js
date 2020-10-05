@@ -80,19 +80,21 @@ $("#finish").click(function count(){
       var choice5 = $("#form5 :checked").val();
       var average;
 
-      //hide th Qs div and display the next elements
-       $("#questiondiv").css("display", "none");
-       $("#startdiv").css("display", "none");
-       $("#finishdiv").css("display", "none");
-       $("#result").css("display", "block");
-       $("img").css("display","none")
-       $("#review").css("display", "block");
-
+      
       //if one of the question is not answered send alert
       if(!choice1 || !choice2|| !choice3|| !choice4|| !choice5)
             alert('You must answer all the questions !');
-      //counting the right answers 
-      else { if (choice1 === questions[0].answer){
+      
+      else {  //hide th Qs div and display the next elements
+             $("#questiondiv").css("display", "none");
+             $("#startdiv").css("display", "none");
+             $("#finishdiv").css("display", "none");
+             $("#result").css("display", "block");
+             $("img").css("display","none")
+             $("#review").css("display", "block");
+
+            //counting the right answers 
+            if (choice1 === questions[0].answer){
                   count++;
                   $("#form1 .chosen").css("color", "lightgreen");
             }
