@@ -79,7 +79,7 @@ h2{
   font-weight: bold;
 }
 
-/*<p> for clicking on finish button */
+/*<p> for clicking on finish button. */
 #finishdiv{
   display: none;
   text-align: center;
@@ -91,7 +91,7 @@ h2{
 
 }
 
-/*finish button*/
+/*finish button.*/
 #finish{
   color:white;
 padding: 5px 12px;
