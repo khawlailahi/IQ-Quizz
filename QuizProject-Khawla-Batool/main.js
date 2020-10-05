@@ -1,3 +1,24 @@
+// var slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("dot");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";  
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}    
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " active";
+//   setTimeout(showSlides, 2000); // Change image every 2 seconds
+// }
+
+
 var questions = [{question:"1.Which number should come next in the pattern:"+"\n"+"37, 34, 31, 28...",
                   answer:"choice3",
                   choices : ["a.18","b.26","c.25","d.48"]},
@@ -68,35 +89,34 @@ $("#finish").click(function count(){
        $("#result").css("display", "block");
 
       var average= (count/4)*100 ;
-      var audio = document.getElementById("sound1");
-      function playAudio() { 
-          audio.play(); 
-      } 
-
+     
 
       if(average===100 || average>=90)
       {
-            $('#result').text("congratulation!!! You are very smart: "+average);
+            $('#result').text("Congratulation!!! You are very smart: "+"\n"+"Your score is: "+average);
             $('#cong').css("display", "block");
-            playAudio();
+           
+            
       }
 
       else if(average>=70 && average<90)
       {
-            $('#result').text("congratulation!!! You are smart: "+average);
+            $('#result').text("Congratulation!!! You are smart: "+"\n"+"Your score is: "+average);
             $('#cong').css("display", "block");
-             playAudio();
+      
+            
+             
       }
 
        else if(average>=40 &&average<70){
             
-            $('#result').text("congratulation!!! You have an average IQ: "+average);
+            $('#result').text("Congratulation!!! You have an average IQ: "+"\n"+"Your score is: "+average);
             $('#cong').css("display", "block");
-            //audio.play();
+            
        }
 
        else{
-            $('#result').text("I am sorry ,Your IQ is below average click in the this link if you need more practice: "+average);
+            $('#result').text("I am sorry, Your IQ is below average"+"\n"+"Your score is: "+average+"\n"+"Click in the this image if you need more practice: ");
             $('a').css("display", "block");
 
 

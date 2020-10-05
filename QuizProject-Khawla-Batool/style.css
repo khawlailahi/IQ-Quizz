@@ -1,3 +1,12 @@
+body {
+	background: url(bg.gif);
+	background-size: 1500px 550px;
+    margin: auto;
+	color: white;
+
+}
+
+
 h1{
 	color:pink;
 	text-align: center;
@@ -31,7 +40,7 @@ h2{
   box-shadow:5px 5px lightgray;
 
 }
-/*mediumseagreen*/
+
 #start{
 
   color:white;
@@ -82,19 +91,24 @@ padding: 5px 12px;
 
 }
 
-body {
-	background-image: url(bg.png);
-	 background-size: cover;
-	max-width: 700px;
-	margin: auto;
-	color: white;
 
-}
 
 a{
 	display: none;
+	 margin-left: auto;
+    margin-right: auto;
+
 }
 
 #cong{
 	display: none;
 }
+
+
+
+
+
+
+
+
+  
