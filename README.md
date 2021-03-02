@@ -14,8 +14,10 @@ FrontEnd IQ Test including different categories of IQ questions.
  ## overview :
  <img src= "webpage2.jpg" width = "1000" >
  
- Review Result 
- <img src= ""webpage1.jpg" width = "1000" >
+ Review Result :
+ 
+ 
+ <img src= "weppage1.jpg" width = "1000" >
  
 # Getting Started 
  
