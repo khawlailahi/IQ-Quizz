@@ -11,6 +11,11 @@ FrontEnd IQ Test including different categories of IQ questions.
  * Submit his answers and see the result 
  * Review his answers and compare with the right answers 
  * view  suggested vedios to improve IQ level .
+ ## overview :
+ <img src= "webpage2.jpg" width = "1000" >
+ 
+ Review Result 
+ <img src= ""webpage1.jpg" width = "1000" >
  
 # Getting Started 
  
